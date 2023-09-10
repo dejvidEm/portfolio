@@ -57,7 +57,7 @@ export default function Intro() {
                 </motion.div>
             </div>
         </div>
-        <motion.h1 className='mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-2xl text-gray-950'
+        <motion.h1 className='mb-10 mt-4 px-6 text-lg font-medium !leading-[1.5] sm:text-2xl text-gray-950'
         initial={{ opacity: 0, y: 100}}
         animate={{ opacity: 1, y: 0 }}>
             <span className='font-bold'>Hello</span>, My name is <span className='font-bold'>David</span> and I am a tech geek based in Slovakia. I have a <span className='font-bold'>2 years</span> of experience in tech industry. My current point of interest is <span className='underline'>React {"(Next.js)"}</span><br/><br/><span className='font-bold text-gray-600'>I'm <span ref={el}></span></span>
@@ -68,9 +68,9 @@ export default function Intro() {
         transition={{
             delay: 0.1,
         }}>
-            <div className='flex flex-row gap-4'>
-                <Link href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'>Contact me here <BsArrowRightCircle className='opacity-75 group-hover:origin-center group-hover:rotate-90 transition-all'/></Link>
-                <a href="/CV.pdf" download={true} className='group bg-white text-gray-900 border border-black/15 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition'>Download CV <BsBoxArrowDown className='opacity-70 group-hover:translate-y-1 transition-all'/></a>
+            <div className='flex flex-row gap-2 sm:gap-4'>
+                <Link href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition text-sm sm:text-base'>Contact me here <BsArrowRightCircle size={30} className='opacity-75 group-hover:origin-center group-hover:rotate-90 transition-all'/></Link>
+                <a href="/CV.pdf" download={true} className='group bg-white text-gray-900 border border-black/15 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transitio text-sm sm:text-base transition'>Download CV <BsBoxArrowDown size={27} className='opacity-70 group-hover:translate-y-1 transition-all'/></a>
             </div>
             <div className='flex flex-row gap-4'>
                 <a href="" className='bg-white border border-black/15 p-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950'><AiOutlineLinkedin size={27}/></a>
