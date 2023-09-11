@@ -8,10 +8,12 @@ import { BsArrowRightCircle} from "react-icons/bs";
 import { BsBoxArrowDown} from "react-icons/bs";
 import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineGithub, AiOutlineLinkedin} from "react-icons/ai";
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   const el = useRef(null);
   
@@ -72,7 +74,10 @@ export default function Intro() {
             delay: 0.1,
         }}>
             <div className='flex flex-row gap-2 sm:gap-4'>
-                <Link href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition text-sm sm:text-base'>Contact me here <BsArrowRightCircle size={30} className='opacity-75 group-hover:origin-center group-hover:rotate-90 transition-all'/></Link>
+                <Link href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition text-sm sm:text-base' onClick={() => {
+                  setActiveSection("Contact");
+                  setTimeOfLastClick(Date.now())
+                }}>Contact me here <BsArrowRightCircle size={30} className='opacity-75 group-hover:origin-center group-hover:rotate-90 transition-all'/></Link>
                 <a href="/CV.pdf" download={true} className='group bg-white text-gray-900 border border-black/15 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transitio text-sm sm:text-base transition'>Download CV <BsBoxArrowDown size={27} className='opacity-70 group-hover:translate-y-1 transition-all'/></a>
             </div>
             <div className='flex flex-row gap-4'>
