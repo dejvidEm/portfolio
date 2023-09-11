@@ -3,8 +3,12 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from 'next/link';
+import clsx from 'clsx';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Header() {
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
     <header className='z-[9999] relative'>
         <motion.div className='fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[40rem] sm:rounded-full' 
@@ -15,12 +19,30 @@ export default function Header() {
             <ul className='flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.84rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5'>
                 {
                     links.map(link => (
-                        <motion.li className='h-3/4 flex items-center justify-center' key={link.hash}
+                        <motion.li className={clsx('h-3/4 flex items-center justify-center relative', {
+                            "text-gray-950": activeSection === link.name
+                        })} key={link.hash}
                         initial={{ y: -250, opacity: 0}}
                         animate={{ y: 0, opacity: 1 }}
                         >
-                            <Link className='flex w-full items-center justify-center px-4 py-3 ease-in-out  duration-300 hover:text-gray-950' href={link.hash}>
+                            <Link className='flex w-full items-center justify-center px-4 py-3 ease-in-out  duration-300 hover:text-black transition' href={link.hash}
+                            onClick={() => {setActiveSection(link.name)
+                                            setTimeOfLastClick(Date.now());
+                            }}>
                                 {link.name}
+
+                                {
+                                    link.name === activeSection && (
+                                        <motion.span 
+                                        layoutId="activeSection"
+                                        transition={{
+                                            type: "spring",
+                                            stiffness: 380,
+                                            damping: 33
+                                        }}
+                                        className='bg-[#ebebeb] rounded-full absolute inset-0 -z-10'></motion.span>
+                                    )
+                                }
                             </Link>
                         </motion.li>
                     ))

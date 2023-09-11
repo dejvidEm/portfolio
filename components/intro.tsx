@@ -7,9 +7,12 @@ import Link from 'next/link';
 import { BsArrowRightCircle} from "react-icons/bs";
 import { BsBoxArrowDown} from "react-icons/bs";
 import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineGithub, AiOutlineLinkedin} from "react-icons/ai";
+import { useSectionInView } from '@/lib/hooks';
 
 
 export default function Intro() {
+  const { ref } = useSectionInView("Home", 0.5);
+
   const el = useRef(null);
   
   useEffect(() => {
@@ -32,7 +35,7 @@ export default function Intro() {
   }, []);
 
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section ref={ref} className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]' id='home'>
         <div className='flex items-center justify-center'>
             <div className='relative'>
                 <motion.div

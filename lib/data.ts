@@ -35,28 +35,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Street Good",
-    location: "Miami, FL",
+    title: "Business Academy",
+    location: "Trebišov, Slovakia",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "My secondary school had below-average requirements and therefore I had time to devote myself to programming this early",
     icon: React.createElement(LuGraduationCap),
     date: "2019",
   },
   {
-    title: "Tepovaničko",
-    location: "Orlando, FL",
+    title: "Deutsche Telekom IT Solutions",
+    location: "Košice, Slovakia",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2021",
-  },
-  {
-    title: "Portfolio Web",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
   },
 ] as const;
 
@@ -87,21 +79,20 @@ export const projectsData = [
 export const skillsData = [
   "HTML",
   "CSS",
+  "SCSS",
   "JavaScript",
+  "Python",
+  "C",
   "TypeScript",
   "React",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
+  "Wordpress",
+  "Figma",
   "Framer Motion",
 ] as const;
