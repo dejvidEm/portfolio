@@ -65,7 +65,7 @@ export default function Intro() {
         <motion.h1 className='mb-10 mt-4 px-6 text-lg font-medium !leading-[1.5] sm:text-2xl text-gray-950'
         initial={{ opacity: 0, y: 100}}
         animate={{ opacity: 1, y: 0 }}>
-            <span className='font-bold'>Hello</span>, My name is <span className='font-bold'>David</span> and I am a tech geek based in Slovakia. I have a <span className='font-bold'>2 years</span> of experience in tech industry. My current point of interest is <span className='underline'>React {"(Next.js)"}</span><br/><br/><span className='font-bold text-gray-600'>I'm <span ref={el}></span></span>
+            <span className='font-bold'>Hello</span>, My name is <span className='font-bold'>David</span> and I am a tech geek based in Slovakia. I have a <span className='font-bold'>2 years</span> of experience in tech industry. My current point of interest is <span className='underline'><span className='font-bold'>React</span> {"(Next.js)"}</span><br/><br/><span className='font-bold text-gray-600'>I'm <span ref={el}></span></span>
         </motion.h1>
         <motion.div className='flex flex-col sm:flex-col items-center justify-center gap-5 px-4 text-md sm:text-lg font-medium'
         initial={{ opacity: 0, y: 100}}
