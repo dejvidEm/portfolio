@@ -1,9 +1,11 @@
 "use client";
 import React from 'react'
 import SectionHeading from './section-heading'
-import { IoRocketOutline } from "react-icons/io5";
 import { motion } from 'framer-motion';
 import { useSectionInView } from '@/lib/hooks';
+import { sendEmail } from "@/actions/sendEmail";
+import SubmitBtn from './submit-btn';
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -13,11 +15,20 @@ export default function Contact() {
       once: true,
     }} id='contact' className='text-center mb-20 sm:mb-28 w-[min(100% ,38rem)]'>
       <SectionHeading>Contact me</SectionHeading>
-      <p className='text-gray-700 -mt-3'>Please contact me directly at <a className='underline' href="mailto:mikulasdejvid@gmail.com">mikulasdejvid@gmail.com</a> or through this form</p>
-      <form action="" className='mt-10 flex flex-col'>
-        <input type="email" placeholder='example@gmail.com' className='px-4 h-14 rounded-lg borderBlack'/>
-        <textarea placeholder='Your message' className='h-52 my-3 rounded-lg borderBlack p-4'></textarea>
-        <button type='submit' className='group items-center gap-2 justify-center flex h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105'>Submit <IoRocketOutline size={25} className='transition-all opacity-75 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:scale-[1.15]'/></button>
+      <p className='text-gray-700 -mt-3 dark:text-white/80'>Please contact me directly at <a className='underline' href="mailto:mikulasdejvid@gmail.com">mikulasdejvid@gmail.com</a> or through this form</p>
+      <form action={async (FormData) => {
+        const { data, error } = await sendEmail(FormData);
+
+        if (error) {
+          toast.error(error);
+          return;
+        }
+
+        toast.success("Email sent successfully!");
+      }} className='mt-10 flex flex-col dark:text-black dark:text'>
+        <input name='email' type="email" required maxLength={500} placeholder='example@gmail.com' className='px-4 h-14 rounded-lg borderBlack dark:bg-white/80 focus:dark:bg-white/100 transition-all dark:outline-none'/>
+        <textarea name='message' placeholder='Your message' className='h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white/80 focus:dark:bg-white/100 transition-all dark:outline-none' required maxLength={5000}></textarea>
+        <SubmitBtn></SubmitBtn>
       </form>
     </motion.section>
   )

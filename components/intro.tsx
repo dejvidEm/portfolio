@@ -62,10 +62,10 @@ export default function Intro() {
                 </motion.div>
             </div>
         </div>
-        <motion.h1 className='mb-10 mt-4 px-6 text-lg font-medium !leading-[1.5] sm:text-2xl text-gray-950'
+        <motion.h1 className='mb-10 mt-4 px-6 text-lg font-medium !leading-[1.5] sm:text-2xl text-gray-950 dark:text-slate-100'
         initial={{ opacity: 0, y: 100}}
         animate={{ opacity: 1, y: 0 }}>
-            <span className='font-bold'>Hello</span>, My name is <span className='font-bold'>David</span> and I am a tech geek based in Slovakia. I have a <span className='font-bold'>2 years</span> of experience in tech industry. My current point of interest is <span className='underline'><span className='font-bold'>React</span> {"(Next.js)"}</span><br/><br/><span className='font-bold text-gray-600'>I'm <span ref={el}></span></span>
+            <span className='font-bold'>Hello</span>, My name is <span className='font-bold'>David</span> and I am a tech geek based in Slovakia. I have a <span className='font-bold'>2 years</span> of experience in tech industry. My current point of interest is <span className='underline'><span className='font-bold'>React</span> {"(Next.js)"}</span><br/><br/><span className='font-bold text-gray-600 dark:text-slate-300'>I'm <span ref={el}></span></span>
         </motion.h1>
         <motion.div className='flex flex-col sm:flex-col items-center justify-center gap-5 px-4 text-md sm:text-lg font-medium'
         initial={{ opacity: 0, y: 100}}
@@ -78,13 +78,13 @@ export default function Intro() {
                   setActiveSection("Contact");
                   setTimeOfLastClick(Date.now())
                 }}>Contact me here <BsArrowRightCircle size={30} className='opacity-75 group-hover:origin-center group-hover:rotate-90 transition-all'/></Link>
-                <a href="/CV.pdf" download={true} className='group bg-white text-gray-900 border border-black/15 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transitio text-sm sm:text-base transition'>Download CV <BsBoxArrowDown size={27} className='opacity-70 group-hover:translate-y-1 transition-all'/></a>
+                <a href="/CV.pdf" download={true} className='group  dark:bg-white/10 dark:text-white/80 bg-white text-gray-900 border border-black/15 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transitio text-sm sm:text-base transition'>Download CV <BsBoxArrowDown size={27} className='opacity-70 group-hover:translate-y-1 transition-all'/></a>
             </div>
             <div className='flex flex-row gap-4'>
-                <a href="" className='bg-white border border-black/15 p-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950'><AiOutlineLinkedin size={27}/></a>
-                <a href="" className='bg-white border border-black/15 p-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950'><AiOutlineGithub size={27}/></a>
-                <a href="" className='bg-white border border-black/15 p-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950'><AiOutlineInstagram size={27}/></a>
-                <a href="" className='bg-white border border-black/15 p-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950'><AiOutlineFacebook size={27}/></a>
+                <a href="" className='bg-white border border-black/15 p-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950 cursor-pointer dark:bg-white/10 dark:text-white/80'><AiOutlineLinkedin size={27}/></a>
+                <a href="" className='bg-white border border-black/15 p-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950 cursor-pointer dark:bg-white/10 dark:text-white/80'><AiOutlineGithub size={27}/></a>
+                <a href="" className='bg-white border border-black/15 p-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950 cursor-pointer dark:bg-white/10 dark:text-white/80'><AiOutlineInstagram size={27}/></a>
+                <a href="" className='bg-white border border-black/15 p-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950 cursor-pointer dark:bg-white/10 dark:text-white/80'><AiOutlineFacebook size={27}/></a>
             </div>
         </motion.div>
     </section>
