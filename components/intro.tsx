@@ -74,7 +74,7 @@ export default function Intro() {
             delay: 0.1,
         }}>
             <div className='flex flex-row gap-2 sm:gap-4'>
-                <Link href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition text-sm sm:text-base' onClick={() => {
+                <Link href="#contact" className='group bg-gray-900 dark:bg-gray-700 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition text-sm sm:text-base' onClick={() => {
                   setActiveSection("Contact");
                   setTimeOfLastClick(Date.now())
                 }}>Contact me here <BsArrowRightCircle size={30} className='opacity-75 group-hover:origin-center group-hover:rotate-90 transition-all'/></Link>
