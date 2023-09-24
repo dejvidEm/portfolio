@@ -8,7 +8,7 @@ export default function About() {
   const { ref } = useSectionInView("About", 0.75);
 
   return (
-    <motion.section ref={ref} className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28'
+    <motion.section ref={ref} className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 '
     initial={{ opacity: 0, y: 100}}
     animate={{ opacity: 1, y: 0}}
     transition={{
@@ -16,11 +16,11 @@ export default function About() {
     }} id='about'>
         <SectionHeading>About me</SectionHeading>
         <p className='mb-3'>
-        Hi there,I am the developer you have been searching for.
+        Hi there, I am <span className='font-semibold'>Full-Stack</span> web developer based in <span className='farebny'>Bratislava, Slovakia</span>.
 
-        My superpower? Turning coffee into code . By day, I craft elegant, user-friendly front-end interfaces that make your grandma say, "Wow, this website is amazing!" And by night, I dive deep into the server-side magic, ensuring your data is secure.
+        By day, I craft elegant, user-friendly front-end interfaces, and by night I dive deep into the server-side code, ensuring your data is secure.
 
-        My coding journey began when I mistook HTML for a foreign language in 2019, and I've been enchanted by the world of web development ever since. Over the years, I've mastered languages like JavaScript, Python and C, and I'm always eager to learn more because, let's face it, I have a soft spot for clean web designs.
+        My coding journey began when I mistook HTML for a foreign language in 2019, and I've been enchanted by the world of web development ever since. Over the years, I've mastered languages like JavaScript, Python, C and many more, you can check in the section <span className='underline font-bold'><a href="#about">About me</a></span>, but I'm always eager to learn more because, let's face it, I have a soft spot for clean web designs and beautiful user interfaces.
         </p>
         <p>
         When I'm not deciphering lines of code, you can find me chasing down the latest tech trends, wasting time and getting upset over teammates in games or lifting heavy things in the gym.

@@ -5,3 +5,15 @@
 .borderBlack {
     @apply border border-black/10;
 }
+
+.expanded {
+    display: flex!important;
+    flex-direction: row;
+}
+
+.farebny {
+    background: #5794FF;
+    background: linear-gradient(to right, #5794FF 0%, #FF6BC9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

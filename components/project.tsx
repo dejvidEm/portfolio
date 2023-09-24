@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -20,6 +20,10 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  const [status, setStatus] = useState(false);
+
+  const expandedClass = status ? "expanded" : "";
 
   return (
     <motion.div
@@ -65,6 +69,11 @@ export default function Project({
 
         group-even:right-[initial] group-even:-left-40"
         />
+        <div onClick={() =>  {
+      setStatus((prevStatus) => !prevStatus);
+      console.log(status);
+    }
+  } className="sm:group-even:ml-[328px] ml-10 mb-4 text-blue-500 underline cursor-pointer">{ status ? "Zobraziť menej" : "Zobraziť viac"}</div>
       </section>
     </motion.div>
   );
