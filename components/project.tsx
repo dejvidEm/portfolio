@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -21,10 +21,6 @@ export default function Project({
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-  const [status, setStatus] = useState(false);
-
-  const expandedClass = status ? "expanded" : "";
-
   return (
     <motion.div
       ref={ref}
@@ -43,7 +39,7 @@ export default function Project({
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
-                className="bg-black/[0.6] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                 key={index}
               >
                 {tag}
@@ -69,11 +65,6 @@ export default function Project({
 
         group-even:right-[initial] group-even:-left-40"
         />
-        <div onClick={() =>  {
-      setStatus((prevStatus) => !prevStatus);
-      console.log(status);
-    }
-  } className="ml-[328px] ml-10 mb-4 text-blue-500 underline cursor-pointer">{ status ? "Zobraziť menej" : "Zobraziť viac"}</div>
       </section>
     </motion.div>
   );
