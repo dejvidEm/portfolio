@@ -4,8 +4,8 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/streetgood.png";
 import { BiCodeBlock } from "react-icons/bi";
-import rmtdevImg from "@/public/CRUD.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import rmtdevImg from "@/public/CRUD2.png";
+import wordanalyticsImg from "@/public/portfolio-web.png";
 import { FaConnectdevelop } from "react-icons/fa";
 
 
@@ -100,8 +100,8 @@ export const projectsData = [
   {
     title: "Portfolio web",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "The project you are currently looking at, the web portfolio, is a must-have for any Front-End developer",
+    tags: ["Next.js", "React", "Typescript", "Framer-Motion", "Tailwind"],
     imageUrl: wordanalyticsImg,
     popis: "Ja som projekt číslo 3",
   },
