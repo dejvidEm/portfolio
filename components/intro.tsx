@@ -47,7 +47,7 @@ export default function Intro() {
                         type: "tween",
                         duration: 0.2
                      }}>
-                      <h1 className='absolute w-full sm:text-8xl text-6xl -z-10  left-1/2 opacity-10 top-[170px] font-extrabold -translate-x-1/2'>Say Hello</h1>
+                      <h1 className='absolute w-full sm:text-8xl text-5xl -z-10  left-1/2 opacity-10 top-[170px] font-extrabold -translate-x-1/2'>Say Hello</h1>
                     <Image src="/profile-pic.png" alt='profile-pic'width="150" height="150" quality="95" priority={true} className='h-24 w-24 rounded-full border-[0.25rem] border-white object-cover shadow-xl'/>
                 </motion.div>
                 <motion.div
