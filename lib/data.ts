@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/streetgood.png";
 import { BiCodeBlock } from "react-icons/bi";
-import rmtdevImg from "@/public/rmtdev.png";
+import rmtdevImg from "@/public/CRUD.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import { FaConnectdevelop } from "react-icons/fa";
 
@@ -90,10 +90,10 @@ export const projectsData = [
     popis: "Ja som projekt číslo 1",
   },
   {
-    title: "Tepovaničko",
+    title: "CRUD User management system",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "On my journey of learning backend development I created this CRUD app with all the functionalities from scratch.",
+    tags: ["Node.js", "Express.js", "React", "MongoDB", "Tailwind"],
     imageUrl: rmtdevImg,
     popis: "Ja som projekt číslo 2",
   },
