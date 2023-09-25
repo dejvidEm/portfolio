@@ -74,7 +74,7 @@ export const experiencesData = [
     title: "Freelance web developer",
     location: "Bratislava, Slovakia",
     description:
-      "Right now I am unemployed, but I code websites for businesses or individuals according to their requirements and I seek every opportunity to learn ! ",
+      "Right now I'm focused on coding websites for businesses or individuals according to their requirements and seeking every opportunity to learn ! ",
     icon: React.createElement(FaConnectdevelop),
     date: "Present",
   },

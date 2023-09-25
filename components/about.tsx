@@ -16,7 +16,7 @@ export default function About() {
     }} id='about'>
         <SectionHeading>About me</SectionHeading>
         <p className='mb-3'>
-        Hi there, I am <span className='font-semibold'>Full-Stack</span> web developer based in <span className='farebny'>Bratislava, Slovakia</span>.
+        Hi there,I'm <span className='font-bold'>Full-Stack</span> web developer based in <span className='farebny'>Bratislava, Slovakia</span>.
 
         By day, I craft elegant, user-friendly front-end interfaces, and by night I dive deep into the server-side code, ensuring your data is secure.
 

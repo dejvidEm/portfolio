@@ -73,7 +73,7 @@ export default function Project({
       setStatus((prevStatus) => !prevStatus);
       console.log(status);
     }
-  } className="sm:group-even:ml-[328px] ml-10 mb-4 text-blue-500 underline cursor-pointer">{ status ? "Zobraziť menej" : "Zobraziť viac"}</div>
+  } className="ml-[328px] ml-10 mb-4 text-blue-500 underline cursor-pointer">{ status ? "Zobraziť menej" : "Zobraziť viac"}</div>
       </section>
     </motion.div>
   );
