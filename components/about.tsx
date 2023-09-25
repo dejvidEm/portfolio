@@ -8,12 +8,13 @@ export default function About() {
   const { ref } = useSectionInView("About", 0.75);
 
   return (
-    <motion.section ref={ref} className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 '
+    <motion.section ref={ref} className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 relative'
     initial={{ opacity: 0, y: 100}}
     animate={{ opacity: 1, y: 0}}
     transition={{
         delay: 0.175,
     }} id='about'>
+      <h1 className='absolute w-full text-8xl -z-10  left-1/2 opacity-70 top-[-50px] font-extrabold -translate-x-1/2 farebny-2'>About Me</h1>
         <SectionHeading>About me</SectionHeading>
         <p className='mb-3'>
         Hi there,I'm <span className='font-bold'>Full-Stack</span> web developer based in <span className='farebny'>Bratislava, Slovakia</span>.
