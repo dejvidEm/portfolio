@@ -39,7 +39,7 @@ export default function Intro() {
   return (
     <section ref={ref} className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]' id='home'>
         <div className='flex items-center justify-center'>
-            <div className='relative'>
+            <div className=''>
                 <motion.div
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -47,8 +47,8 @@ export default function Intro() {
                         type: "tween",
                         duration: 0.2
                      }}>
-                      <h1 className='absolute w-full sm:text-8xl text-5xl -z-10  left-1/2 opacity-10 top-[170px] font-extrabold -translate-x-1/2'>Say Hello</h1>
-                    <Image src="/profile-pic.png" alt='profile-pic'width="150" height="150" quality="95" priority={true} className='h-24 w-24 rounded-full border-[0.25rem] border-white object-cover shadow-xl'/>
+                      <h1 className='absolute w-full sm:text-8xl text-5xl -z-10  left-1/2 opacity-5 top-[170px] font-extrabold -translate-x-1/2'>Say Hello</h1>
+                    <Image src="/profile-pic.png" alt='profile-pic'width="150" height="150" quality="95" priority={true} className='h-24 w-24 rounded-full border-[0.25rem] border-white object-cover shadow-xl relative'/>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, scale: 0 }}
