@@ -15,6 +15,7 @@ export default function About() {
         delay: 0.175,
     }} id='about'>
       <h1 className='absolute w-full sm:text-8xl text-6xl -z-10  left-1/2 opacity-60 sm:top-[-50px] top-[-20px] font-extrabold -translate-x-1/2 farebny-2'>About Me</h1>
+      <SectionHeading>About me</SectionHeading>
         <p className='mb-3'>
         Hi there,I'm <span className='font-bold'>Full-Stack</span> web developer based in <span className='farebny'>Bratislava, Slovakia</span>.
 
