@@ -6,6 +6,7 @@ import corpcommentImg from "@/public/streetgood.png";
 import { BiCodeBlock } from "react-icons/bi";
 import rmtdevImg from "@/public/CRUD2.png";
 import wordanalyticsImg from "@/public/portfolio-web.png";
+import todo from "@/public/todo.png";
 import { FaConnectdevelop } from "react-icons/fa";
 
 
@@ -94,7 +95,7 @@ export const projectsData = [
     description:
       "This project is a bit basic but it taught me about requests, because I used mockapi.io for data fetching through fethAPI, input validation and data sorting",
     tags: ["React", "Next.js", "Mockapi.io", "Tailwind", "Formik", "Yup"],
-    imageUrl: corpcommentImg,
+    imageUrl: todo,
     popis: "Ja som projekt číslo 1",
   },
   {
