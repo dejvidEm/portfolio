@@ -92,7 +92,7 @@ export const projectsData = [
   {
     title: "To Do App",
     description:
-      "This project is a bit basic but it taught me a lot about HTTP requests, because I used mockapi.io for data fetching through fethAPI, input validation and data sorting",
+      "This project is a bit basic but it taught me about requests, because I used mockapi.io for data fetching through fethAPI, input validation and data sorting",
     tags: ["React", "Next.js", "Mockapi.io", "Tailwind", "Formik", "Yup"],
     imageUrl: corpcommentImg,
     popis: "Ja som projekt číslo 1",
