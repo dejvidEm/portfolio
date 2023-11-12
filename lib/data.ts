@@ -6,7 +6,7 @@ import corpcommentImg from "@/public/streetgood.png";
 import { BiCodeBlock } from "react-icons/bi";
 import rmtdevImg from "@/public/CRUD2.png";
 import wordanalyticsImg from "@/public/portfolio-web.png";
-import todo from "@/public/todo1.png";
+import todo from "@/public/todo2.png";
 import { FaConnectdevelop } from "react-icons/fa";
 
 
