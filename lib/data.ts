@@ -7,6 +7,7 @@ import { BiCodeBlock } from "react-icons/bi";
 import rmtdevImg from "@/public/CRUD2.png";
 import wordanalyticsImg from "@/public/portfolio-web.png";
 import { FaConnectdevelop } from "react-icons/fa";
+import tripple  from "@/public/CRUD2.png";
 
 
 
@@ -81,6 +82,14 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Tripple App",
+    description:
+      "My attempt to create an app that will simplify every single trip, whether it's a vacation or a weekend trip to nature",
+    tags: ["React", "Next.js", "Express.js", "MongoDB", "FetchAPI", "Tailwind", "Figma", "AdobeXD"],
+    imageUrl: tripple,
+    popis: "Ja som projekt číslo 1",
+  },
   {
     title: "Street Good",
     description:
