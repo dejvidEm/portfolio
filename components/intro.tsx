@@ -67,7 +67,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100}}
         animate={{ opacity: 1, y: 0 }}>
           <p className='italic font-light text-sm sm:text-base my-10'>„ Be the change that you wish to see in the world. "</p>
-            <span className='font-bold'>Hello</span>, My name is <span className='font-bold'>David</span> and I am a tech geek based in Slovakia. I have a <span className='font-bold'>2 years</span> of experience in tech industry. My current point of interest is <span className='underline'><span className='font-bold'>Node.js <span className='font-normal'>&</span></span> <span className='font-bold'>Adonis.js</span></span><br/><br/><span className='font-bold text-gray-600 dark:text-slate-300'>I'm <span ref={el}></span></span>
+            <span className='font-bold'>Hello</span>, My name is <span className='font-bold'>David</span> and I am a tech geek based in Slovakia. <br /> I have a <span className='font-bold'>2 years</span> of experience in tech industry<br/><br/><span className='font-bold text-gray-600 dark:text-slate-300'>I'm <span ref={el}></span></span>
         </motion.h1>
         <motion.div className='flex flex-col sm:flex-col items-center justify-center gap-5 px-0 text-md sm:text-lg font-medium'
         initial={{ opacity: 0, y: 100}}

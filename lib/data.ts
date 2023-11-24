@@ -6,6 +6,7 @@ import corpcommentImg from "@/public/streetgood.png";
 import { BiCodeBlock } from "react-icons/bi";
 import rmtdevImg from "@/public/CRUD2.png";
 import wordanalyticsImg from "@/public/portfolio-web.png";
+import todo from "@/public/todo2.png";
 import { FaConnectdevelop } from "react-icons/fa";
 import tripple  from "@/public/CRUD2.png";
 
@@ -16,10 +17,10 @@ export const links = [
     name: "Home",
     hash: "#home",
   },
-  {
+/* {
     name: "About",
     hash: "#about",
-  },
+  },*/
   {
     name: "Projects",
     hash: "#projects",
@@ -96,6 +97,14 @@ export const projectsData = [
       "I created this website from scratch for a business that offers the best smoothie bowls in town",
     tags: ["React", "Next.js", "Framer-motion", "Tailwind", "Figma"],
     imageUrl: corpcommentImg,
+    popis: "Ja som projekt číslo 1",
+  },
+  {
+    title: "To Do App",
+    description:
+      "This project is a bit basic but it taught me about requests, because I used mockapi.io for data fetching through fethAPI, input validation and data sorting",
+    tags: ["React", "Next.js", "Mockapi.io", "Tailwind", "Formik", "Yup"],
+    imageUrl: todo,
     popis: "Ja som projekt číslo 1",
   },
   {
