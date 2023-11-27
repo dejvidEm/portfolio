@@ -86,7 +86,8 @@ export const projectsData = [
   {
     title: "Tripple App",
     description:
-      "My attempt to create an app that will simplify every single trip, whether it's a vacation or a weekend trip to nature",
+      "Introducing Tripple, the ultimate travel companion that transforms your trips into pure adventures!",
+    description2: "With our app, your travel experience becomes a breeze. Effortless Planning, Interactive Trip Dashboard and more",
     tags: ["React", "Next.js", "Express.js", "MongoDB", "FetchAPI", "Tailwind", "Figma", "AdobeXD"],
     imageUrl: tripple,
     popis: "Ja som projekt číslo 1",
@@ -95,6 +96,7 @@ export const projectsData = [
     title: "Street Good",
     description:
       "I created this website from scratch for a business that offers the best smoothie bowls in town",
+    description2: "Viac textu Viac textu Viac Textu Viac Textu",
     tags: ["React", "Next.js", "Framer-motion", "Tailwind", "Figma"],
     imageUrl: corpcommentImg,
     popis: "Ja som projekt číslo 1",
@@ -103,6 +105,7 @@ export const projectsData = [
     title: "To Do App",
     description:
       "This project is a bit basic but it taught me about requests, because I used mockapi.io for data fetching through fethAPI, input validation and data sorting",
+    description2: "Viac textu Viac textu Viac Textu Viac Textu Viac textu Viac textu Viac Textu Viac Textu",
     tags: ["React", "Next.js", "Mockapi.io", "Tailwind", "Formik", "Yup"],
     imageUrl: todo,
     popis: "Ja som projekt číslo 1",
@@ -111,6 +114,7 @@ export const projectsData = [
     title: "CRUD User management system",
     description:
       "On my journey of learning backend development I created this CRUD app with all the functionalities from scratch.",
+    description2: "Viac textu Viac textu Viac Textu Viac Textu Viac textu Viac textu Viac Textu Viac Textu",
     tags: ["Node.js", "Express.js", "React", "MongoDB", "Tailwind"],
     imageUrl: rmtdevImg,
     popis: "Ja som projekt číslo 2",
@@ -119,6 +123,7 @@ export const projectsData = [
     title: "Portfolio web",
     description:
       "The project you are currently looking at, the web portfolio, is a must-have for any Front-End developer",
+    description2: "Viac textu Viac textu Viac Textu Viac Textu Viac textu Viac textu Viac Textu Viac Textu",
     tags: ["Next.js", "React", "Typescript", "Framer-Motion", "Tailwind"],
     imageUrl: wordanalyticsImg,
     popis: "Ja som projekt číslo 3",

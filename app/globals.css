@@ -6,10 +6,7 @@
     @apply border border-black/10;
 }
 
-.expanded {
-    display: flex!important;
-    flex-direction: row;
-}
+toggle-display
 
 .farebny {
     background: #5794FF;

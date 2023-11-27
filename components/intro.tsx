@@ -21,7 +21,7 @@ export default function Intro() {
   useEffect(() => {
     if (el.current) {
       const options = {
-        strings: ["Full-Stack developer", "Designer", "Caffeine addict"],
+        strings: ["Full-Stack developer", "Caffeine addict"],
         typeSpeed: 40,
         backSpeed: 40,
         backDelay: 650,
