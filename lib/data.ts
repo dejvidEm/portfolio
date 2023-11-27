@@ -104,8 +104,8 @@ export const projectsData = [
   {
     title: "To Do App",
     description:
-      "This project is a bit basic but it taught me about requests, because I used mockapi.io for data fetching through fethAPI, input validation and data sorting",
-    description2: "Viac textu Viac textu Viac Textu Viac Textu Viac textu Viac textu Viac Textu Viac Textu",
+      "The best To-Do app on the market. With the help of FETCHapi, you can store all your bags in a mockAPI",
+    description2: "In this project, I use fetchapi, all CRUD operations and mockapi.io, all this in the Next.js framework using Typescript and custom React hooks and HTTP requests",
     tags: ["React", "Next.js", "Mockapi.io", "Tailwind", "Formik", "Yup"],
     imageUrl: todo,
     popis: "Ja som projekt číslo 1",

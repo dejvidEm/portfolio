@@ -6,7 +6,6 @@
     @apply border border-black/10;
 }
 
-toggle-display
 
 .farebny {
     background: #5794FF;
@@ -17,7 +16,7 @@ toggle-display
 
 .farebny-2 {
     background: #bdebff;
-background: linear-gradient(to right, #bdebff 0%, #FFC3E8 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #bdebff 0%, #FFC3E8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
