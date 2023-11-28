@@ -96,7 +96,7 @@ export const projectsData = [
     title: "Street Good",
     description:
       "I created this website from scratch for a business that offers the best smoothie bowls in town",
-    description2: "Viac textu Viac textu Viac Textu Viac Textu",
+    description2: "",
     tags: ["React", "Next.js", "Framer-motion", "Tailwind", "Figma"],
     imageUrl: corpcommentImg,
     popis: "Ja som projekt číslo 1",
@@ -114,7 +114,7 @@ export const projectsData = [
     title: "CRUD User management system",
     description:
       "On my journey of learning backend development I created this CRUD app with all the functionalities from scratch.",
-    description2: "Viac textu Viac textu Viac Textu Viac Textu Viac textu Viac textu Viac Textu Viac Textu",
+    description2: "",
     tags: ["Node.js", "Express.js", "React", "MongoDB", "Tailwind"],
     imageUrl: rmtdevImg,
     popis: "Ja som projekt číslo 2",
@@ -123,7 +123,7 @@ export const projectsData = [
     title: "Portfolio web",
     description:
       "The project you are currently looking at, the web portfolio, is a must-have for any Front-End developer",
-    description2: "Viac textu Viac textu Viac Textu Viac Textu Viac textu Viac textu Viac Textu Viac Textu",
+    description2: "",
     tags: ["Next.js", "React", "Typescript", "Framer-Motion", "Tailwind"],
     imageUrl: wordanalyticsImg,
     popis: "Ja som projekt číslo 3",
