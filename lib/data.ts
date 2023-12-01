@@ -8,7 +8,7 @@ import rmtdevImg from "@/public/CRUD2.png";
 import wordanalyticsImg from "@/public/portfolio-web.png";
 import todo from "@/public/todo2.png";
 import { FaConnectdevelop } from "react-icons/fa";
-import tripple  from "@/public/mockup-tripple.png";
+import tripple  from "@/public/tripple.png";
 
 
 
