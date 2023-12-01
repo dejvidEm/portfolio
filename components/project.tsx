@@ -75,7 +75,7 @@ export default function Project({
             quality={95}
             className={`absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-xl shadow-2xl
               transition 
-              ${isClicked ? "scale-[1.06] -translate-x-3 translate-y-3 rotate-2" : ""}
+              ${isClicked ? "scale-[1.07] -translate-x-3 translate-y-3 rotate-1" : ""}
   
               group-even:group-hover:translate-x-3
               group-even:group-hover:translate-y-3
