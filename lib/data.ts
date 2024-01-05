@@ -76,7 +76,15 @@ export const experiencesData = [
     title: "Freelance web developer",
     location: "Bratislava, Slovakia",
     description:
-      "Right now I'm focused on coding websites for businesses or individuals according to their requirements and seeking every opportunity to learn ! ",
+      "In my free time I focused on coding websites for businesses or individuals according to their requirements and seeking every opportunity to learn ! ",
+    icon: React.createElement(FaConnectdevelop),
+    date: "Present",
+  },
+  {
+    title: "Full-Stack developer",
+    location: "Bratislava, Slovakia - Opava, Czech Republic",
+    description:
+      "Full-Stack developer and UI/UX Designer",
     icon: React.createElement(FaConnectdevelop),
     date: "Present",
   },
@@ -88,45 +96,45 @@ export const projectsData = [
     description:
       "Introducing Tripple, the ultimate travel companion that transforms your trips into pure adventures!",
     description2: "With our app, your travel experience becomes a breeze. Effortless Planning, Interactive Trip Dashboard and more",
+    odkaz: "",
     tags: ["React", "Next.js", "Express.js", "MongoDB", "FetchAPI", "Tailwind", "Figma", "AdobeXD"],
     imageUrl: tripple,
-    popis: "Ja som projekt číslo 1",
   },
   {
     title: "Street Good",
     description:
       "I created this website from scratch for a business that offers the best smoothie bowls in town",
     description2: "",
+    odkaz: "",
     tags: ["React", "Next.js", "Framer-motion", "Tailwind", "Figma"],
     imageUrl: corpcommentImg,
-    popis: "Ja som projekt číslo 1",
   },
   {
     title: "To Do App",
     description:
       "The best To-Do app on the market. With the help of FETCHapi, you can store all your bags in a mockAPI",
     description2: "In this project, I use fetchapi, all CRUD operations and mockapi.io, all this in the Next.js framework using Typescript and custom React hooks and HTTP requests",
+    odkaz: "https://to-do-app-git-main-dejvidem.vercel.app/",
     tags: ["React", "Next.js", "Mockapi.io", "Tailwind", "Formik", "Yup"],
     imageUrl: todo,
-    popis: "Ja som projekt číslo 1",
   },
   {
     title: "CRUD User management system",
     description:
       "On my journey of learning backend development I created this CRUD app with all the functionalities from scratch.",
     description2: "",
+    odkaz: "",
     tags: ["Node.js", "Express.js", "React", "MongoDB", "Tailwind"],
     imageUrl: rmtdevImg,
-    popis: "Ja som projekt číslo 2",
   },
   {
     title: "Portfolio web",
     description:
       "The project you are currently looking at, the web portfolio, is a must-have for any Front-End developer",
     description2: "",
+    odkaz: "",
     tags: ["Next.js", "React", "Typescript", "Framer-Motion", "Tailwind"],
     imageUrl: wordanalyticsImg,
-    popis: "Ja som projekt číslo 3",
   },
 ]as const;
 

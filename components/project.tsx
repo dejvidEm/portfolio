@@ -9,6 +9,7 @@ export default function Project({
   title,
   description,
   description2,
+  odkaz,
   tags,
   imageUrl,
 }: ProjectProps) {
@@ -38,7 +39,7 @@ export default function Project({
         onClick={handleClick}
       >
         <section
-          className={`bg-gray-100 max-w-[42rem] prechod border cursor-pointer border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20`}
+          className={`bg-gray-100 max-w-[42rem] prechod border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20`}
           style={{
             height: isClicked ? "auto" : "", // Set toggle for card size on click
           }}
@@ -53,9 +54,10 @@ export default function Project({
               animate={{ height: isClicked ? "auto" : 0, opacity: isClicked ? 1 : 0 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="mt-4 mb-6 leading-relaxed text-blue-950 dark:text-white/70 prechod"
+              className="mt-4 mb-6 flex flex-col justify-between leading-relaxed text-blue-950 dark:text-white/70 prechod"
             >
               {description2}
+              <a href={odkaz} target="_blank" className="mt-4 text-gray-950 font-medium underline">Click to see demo</a>
             </motion.p>
             <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
               {tags.map((tag, index) => (
