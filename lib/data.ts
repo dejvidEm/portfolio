@@ -65,28 +65,36 @@ export const experiencesData = [
     date: "2022 - 2023",
   },
   {
+    title: "FIIT STU",
+    location: "Bratislava, Slovakia",
+    description:
+      "I commenced my studies at STU FIIT, however, I chose to suspend my education in order to prioritize my professional pursuits.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022 - 2023",
+  },
+  {
     title: "Globerg:Digital - Front-End developer",
     location: "Bratislava, Slovakia",
     description:
       "In this job, I have been coding websites and e-shop for large variety of clients using Next.js and custom technologies or wordpress",
     icon: React.createElement(BiCodeBlock),
-    date: "2023 - 2023",
+    date: "2023",
   },
   {
     title: "Freelance web developer",
     location: "Bratislava, Slovakia",
     description:
-      "In my free time I focused on coding websites for businesses or individuals according to their requirements and seeking every opportunity to learn ! ",
+      "In my free time I focused on coding websites/apps for businesses or individuals according to their requirements and seeking every opportunity to learn.",
     icon: React.createElement(FaConnectdevelop),
-    date: "Present",
+    date: "2023",
   },
   {
     title: "Full-Stack developer",
     location: "Bratislava, Slovakia - Opava, Czech Republic",
     description:
-      "Full-Stack developer and UI/UX Designer",
+      "Full-Stack developer and UI/UX Designer. I acquired extensive experience as a Full-Stack developer and was entrusted with the responsibility of designing UI applications in Angular/Figma.",
     icon: React.createElement(FaConnectdevelop),
-    date: "Present",
+    date: "2023-2024",
   },
 ] as const;
 
